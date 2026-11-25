@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Pregnancy &amp; Follicular Study Guide</title>
+<style>
+:root{--bg:#fff7f9;--card:#fff;--tx:#2b2230;--mu:#6d6275;--ac:#c2467a;--ln:#f0d9e3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1520;--card:#261e2c;--tx:#f3ecf6;--mu:#b5a8bd;--ac:#f08ab8;--ln:#3b2f44;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+header{padding:20px 16px 8px;max-width:760px;margin:auto}h1{margin:0;font-size:1.4rem}p.s{margin:4px 0 0;color:var(--mu);font-size:.9rem}
+nav{display:flex;gap:6px;max-width:760px;margin:12px auto;padding:0 16px;overflow-x:auto}
+nav button{flex:1;white-space:nowrap;padding:10px 12px;border:1px solid var(--ln);background:var(--card);color:var(--tx);border-radius:20px;font:inherit;font-size:.9rem;cursor:pointer}
+nav button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+main{max-width:760px;margin:auto;padding:0 16px 40px}.card{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:14px 16px;margin:10px 0}
+h2{font-size:1.1rem;margin:0 0 6px;color:var(--ac)}ul{padding-left:20px;margin:6px 0}table{width:100%;border-collapse:collapse;font-size:.9rem}td,th{border-bottom:1px solid var(--ln);padding:6px 4px;text-align:left;vertical-align:top}
+details{border-bottom:1px solid var(--ln);padding:8px 0}summary{cursor:pointer;font-weight:600}details p{margin:6px 0 2px;color:var(--mu)}
+input,select{font:inherit;padding:8px;border:1px solid var(--ln);border-radius:8px;background:var(--bg);color:var(--tx);width:100%;margin:4px 0}
+.r{background:var(--bg);border-radius:10px;padding:10px;margin-top:8px}.w{font-size:.8rem;color:var(--mu);margin-top:20px}.sec{display:none}.sec.on{display:block}.mb{padding:8px 12px;margin:2px;border:1px solid var(--ln);border-radius:16px;background:var(--card);color:var(--tx);font:inherit;font-size:.85rem;cursor:pointer}.mb.sel{background:var(--ac);color:#fff}.sw{display:inline-block;width:28px;height:28px;border-radius:50%;border:2px solid var(--ln);cursor:pointer;margin:2px 4px 2px 0;vertical-align:middle}
+</style></head><body>
+<header><h1>🌸 Pregnancy &amp; Follicular Study Guide</h1><p class="s">Learn how follicle tracking works, the full pregnancy journey, and common questions.</p><p class="s" style="color:var(--ac);font-weight:600">By Dr. Rushikesh Joshi &amp; Dr. Vidya Joshi</p><div id='sw' style='margin-top:8px;font-size:.8rem;color:var(--mu)'>Theme: </div></header>
+<nav id="nav"></nav><main>
+
+<section class="sec" id="t0">
+<div class="card"><h2>What is a follicular study?</h2><p>Also called follicular monitoring or folliculometry. A doctor uses serial (usually transvaginal) ultrasounds during one menstrual cycle to watch follicles (fluid sacs in the ovary holding eggs) grow, and to time ovulation and intercourse/IUI. It is common with irregular cycles, PCOS, ovulation-induction medicines, or when trying to conceive for a while.</p></div>
+<div class="card"><h2>Typical process</h2><ul>
+<li><b>Day 2–3:</b> baseline scan – ovaries, resting follicles, ruling out cysts.</li>
+<li><b>Day 8–10 onward:</b> scans every 1–3 days to track the leading (dominant) follicle and uterine lining.</li>
+<li><b>Mature follicle:</b> about 18–24 mm. Growth is roughly 1.5–2 mm/day.</li>
+<li><b>Lining (endometrium):</b> ideally ≥ 7–8 mm, “triple-line” pattern.</li>
+<li><b>Trigger injection (hCG):</b> sometimes given to release the egg; ovulation follows in ~36–40 hours.</li>
+<li><b>Confirmation:</b> follicle disappears/collapses, a little free fluid appears; later a corpus luteum forms.</li></ul></div>
+<div class="card"><h2>Follicle growth estimator</h2><p style="margin:0;color:var(--mu);font-size:.85rem">A rough illustration only – real growth varies.</p>
+<label>Current follicle size (mm)<input id="sz" type="number" value="12" min="1" max="30"></label>
+<label>Growth per day (mm)<select id="gr"><option>1.5</option><option selected>2</option><option>2.5</option></select></label>
+<button onclick="calc()" style="margin-top:6px;padding:10px 16px;border:0;border-radius:10px;background:var(--ac);color:#fff;font:inherit;cursor:pointer">Estimate</button><div class="r" id="out">Enter a size and tap Estimate.</div></div>
+<div class="card"><h2>Cycle phases</h2><table><tr><th>Phase</th><th>Days (28-day cycle)</th><th>What happens</th></tr>
+<tr><td>Menstrual</td><td>1–5</td><td>Lining sheds</td></tr><tr><td>Follicular</td><td>1–13</td><td>FSH grows follicles; estrogen rises</td></tr>
+<tr><td>Ovulation</td><td>~14</td><td>LH surge, egg released</td></tr><tr><td>Luteal</td><td>15–28</td><td>Progesterone prepares lining</td></tr></table>
+<p>Fertile window: about 5 days before ovulation through ovulation day. The egg survives ~12–24 hours; sperm up to ~5 days.</p></div>
+</section>
+
+<section class="sec" id="t1">
+<div class="card"><h2>Pregnancy journey</h2><p>Counted from the first day of your last period (LMP) – about 40 weeks.</p></div>
+<div class="card"><h2>Trimester 1 (weeks 1–13)</h2><ul><li>Fertilisation → implantation (~6–10 days after ovulation) → hCG rises; positive test ~ at missed period.</li><li>Heartbeat usually seen on ultrasound around 6–7 weeks.</li><li>Common: nausea, fatigue, breast tenderness, frequent urination.</li><li>Organs form; folic acid, prenatal vitamins, avoid alcohol/smoking.</li><li>Tests: dating scan (6–9 wks), blood tests, NT scan (11–14 wks).</li></ul></div>
+<div class="card"><h2>Trimester 2 (weeks 14–27)</h2><ul><li>Energy often returns; bump shows.</li><li>Baby’s movements felt ~16–22 weeks.</li><li>Anomaly (detailed) scan at 18–22 weeks.</li><li>Glucose screening for gestational diabetes at 24–28 weeks.</li></ul></div>
+<div class="card"><h2>Trimester 3 (weeks 28–40)</h2><ul><li>Rapid growth; backache, swelling, heartburn, Braxton Hicks contractions.</li><li>Growth scans, blood pressure checks, kick counts.</li><li>GBS swab ~36–37 weeks in many places; discuss birth plan.</li><li>Labour signs: regular painful contractions, water breaking, show.</li></ul></div>
+<div class="card"><h2>Labour &amp; after birth</h2><ul><li>Stages: early/active labour → pushing &amp; birth → placenta delivery.</li><li>Options: vaginal birth or caesarean, as medically advised.</li><li>Postpartum: rest, feeding support, bleeding (lochia), mood changes, 6-week check.</li></ul></div>
+<div class="card"><h2>🚩 Seek urgent care for</h2><ul><li>Heavy bleeding, severe abdominal pain, fluid leak</li><li>Reduced baby movements</li><li>Severe headache, vision changes, sudden swelling (pre-eclampsia signs)</li><li>Fever, persistent vomiting, thoughts of self-harm</li></ul></div>
+</section>
+
+<section class="sec" id="t2"><div class="card"><h2>Common questions</h2><div id="faq"></div></div></section>
+
+<section class="sec" id="t3"><div class="card"><h2>Animations</h2><div><button class="mb sel" id="m0" onclick="setM(0)">Follicle growth</button><button class="mb" id="m1" onclick="setM(1)">Sperm &amp; fertilisation</button><button class='mb' id='m2' onclick='setM(2)'>HSG dye test</button><button class='mb' id='m3' onclick='setM(3)'>Implantation</button><button class='mb' id='m4' onclick='setM(4)'>Baby growth</button><button class="mb" onclick="paused=!paused">⏯ Pause / Play</button></div><canvas id="cv" width="640" height="360" style="width:100%;height:auto;border-radius:12px;margin-top:8px;background:#2a1b33"></canvas><p style="color:var(--mu);font-size:.85rem">Simplified illustrations, not to scale. Real timing varies from person to person.</p></div></section>
+<section class='sec' id='t4'>
+<div class='card'><h2>What is an HSG?</h2><p>Hysterosalpingography (HSG) is an X-ray test. Contrast dye is passed through the cervix so the doctor can see the inside of the uterus and whether the fallopian tubes are open. It is a key test in a fertility work-up.</p></div>
+<div class='card'><h2>Why it is done</h2><ul><li>Not conceiving after 6–12 months of trying</li><li>Suspected blocked tubes (past infection, endometriosis, surgery)</li><li>Recurrent miscarriage or suspected uterine shape problems</li><li>Looking for polyps, fibroids, adhesions or a septum</li><li>Before IUI or other fertility treatment</li></ul></div>
+<div class='card'><h2>When and how</h2><ul><li><b>Timing:</b> after bleeding stops and before ovulation (about day 7–12), so there is no pregnancy.</li><li><b>Procedure:</b> speculum, thin catheter in the cervix, dye injected, X-ray images taken. The test takes about 5–10 minutes.</li><li><b>Feeling:</b> period-like cramps; a painkiller beforehand is often advised.</li><li><b>Tell the doctor</b> about possible pregnancy, iodine or dye allergy, or current pelvic infection or discharge.</li><li><b>After:</b> light spotting and watery dye discharge for a day or two are normal.</li><li><b>Call your doctor</b> for fever, severe pain or foul discharge.</li></ul></div>
+<div class='card'><h2>Reading the result</h2><table><tr><th>Finding</th><th>Meaning</th></tr><tr><td>Normal cavity, dye spills from both tubes</td><td>Tubes are open</td></tr><tr><td>No spill on one or both sides</td><td>Tube blocked or in spasm; may need repeat or laparoscopy</td></tr><tr><td>Dilated, sausage-shaped tube</td><td>Hydrosalpinx; often treated before IVF</td></tr><tr><td>Filling defect</td><td>Polyp, fibroid or adhesions</td></tr><tr><td>Heart-shaped or divided cavity</td><td>Septate or bicornuate uterus</td></tr></table></div>
+<div class='card'><h2>Alternatives and risks</h2><ul><li>HyCoSy or saline sonography (ultrasound, no radiation)</li><li>Hysteroscopy and laparoscopy with dye test</li><li>Risks are uncommon: infection, dye allergy, small radiation dose</li><li>Not done during pregnancy or active pelvic infection</li></ul></div>
+</section>
+<section class='sec' id='t5'>
+<div class='card'><h2>Before you conceive</h2><ul><li>Start folic acid (commonly 400 mcg daily; the dose is for your doctor to set) and a healthy diet</li><li>Aim for a healthy weight; stop smoking and alcohol</li><li>Check rubella and other vaccines, thyroid, diabetes and blood pressure</li><li>Review all medicines with your doctor</li></ul></div>
+<div class='card'><h2>When to see a fertility doctor</h2><ul><li>Under 35: after 12 months of trying</li><li>35 or older: after 6 months; over 40: sooner</li><li>Irregular or absent periods, PCOS, endometriosis, previous tube problems, or two or more miscarriages: seek advice early</li></ul></div>
+<div class='card'><h2>Common fertility tests</h2><ul><li><b>Her:</b> follicular study, AMH, thyroid (TSH), prolactin, HSG or other tube test</li><li><b>Partner:</b> semen analysis (counts, movement, shape). Male factors cause about 1 in 3 cases.</li></ul></div>
+<div class='card'><h2>Treatment steps</h2><ul><li>Lifestyle changes and timed intercourse</li><li>Ovulation induction tablets or injections with follicle monitoring</li><li>IUI: washed sperm placed in the uterus around ovulation</li><li>IVF/ICSI: eggs collected, fertilised in the lab, embryo transferred</li></ul></div>
+<div class='card'><h2>Healthy pregnancy</h2><ul><li><b>Visits:</b> monthly to 28 weeks, every 2 weeks to 36, then weekly</li><li><b>Food:</b> protein, iron, calcium, fruit, vegetables, water; a small extra meal in trimesters 2–3 is enough</li><li><b>Weight gain:</b> about 11–16 kg if starting at normal weight</li><li><b>Move:</b> walk daily; sleep on your side later in pregnancy</li><li><b>Vaccines:</b> flu and Tdap (usually 27–36 weeks), as your doctor advises</li><li><b>Avoid:</b> unprescribed medicines, alcohol, smoking, raw foods</li><li><b>Mind:</b> low mood or anxiety is common; talk to your doctor early</li></ul></div>
+</section>
+<section class='sec' id='t6'>
+<div class='card'><h2>What is IUI?</h2><p>Intrauterine insemination (IUI) places washed, concentrated sperm directly into the uterus around ovulation. It is a simple, low-cost first-line treatment and needs no anaesthesia.</p></div>
+<div class='card'><h2>Who may benefit</h2><ul><li>Unexplained infertility</li><li>Mild male factor (lower count or movement)</li><li>Ovulation problems such as PCOS</li><li>Cervical mucus problems, or use of donor sperm</li><li><b>Needs:</b> at least one open fallopian tube (often checked by HSG) and a healthy uterus</li></ul></div>
+<div class='card'><h2>Step by step</h2><ol style='padding-left:20px;margin:6px 0'><li><b>Day 2–3:</b> baseline scan and blood tests.</li><li><b>Stimulation (optional):</b> tablets or small-dose injections to grow 1–2 follicles.</li><li><b>Follicular study:</b> scans every 1–3 days from about day 9–10.</li><li><b>Trigger:</b> hCG injection when the leading follicle is about 18 mm or more.</li><li><b>Sperm preparation:</b> a fresh sample is washed in the lab.</li><li><b>IUI:</b> done about 24–36 hours after the trigger. It takes a few minutes and feels like a smear test. Rest 10–15 minutes afterwards.</li><li><b>Support:</b> progesterone is often prescribed for the second half of the cycle.</li><li><b>Test:</b> pregnancy test about 14 days later.</li></ol></div>
+<div class='card'><h2>Chances and risks</h2><ul><li>Success is roughly 10–20% per cycle, and falls with age and cause. Doctors often suggest 3–4 cycles before moving to IVF.</li><li>Risks: twins or more with stimulation, mild cramps or spotting, rare infection, rare ovarian over-response.</li><li>Seek help for severe pain, fever, or heavy bleeding.</li></ul></div>
+</section>
+<section class='sec' id='t7'>
+<div class='card'><h2>What is IVF?</h2><p>In vitro fertilisation (IVF) collects eggs from the ovaries, fertilises them with sperm in the lab, and places one embryo in the uterus. ICSI is a version where a single sperm is injected into each egg.</p></div>
+<div class='card'><h2>Who may need it</h2><ul><li>Blocked or damaged fallopian tubes</li><li>Moderate or severe male factor</li><li>Endometriosis, low ovarian reserve, or older age</li><li>Failed IUI cycles, or genetic testing of embryos (PGT)</li></ul></div>
+<div class='card'><h2>Step by step</h2><ol style='padding-left:20px;margin:6px 0'><li><b>Work-up:</b> hormone tests, AMH, scans, semen analysis.</li><li><b>Stimulation:</b> daily hormone injections for about 8–12 days, with scans and blood tests.</li><li><b>Trigger:</b> final injection to mature the eggs.</li><li><b>Egg retrieval:</b> about 34–36 hours later, under sedation, by ultrasound-guided needle. It takes 15–20 minutes.</li><li><b>Fertilisation:</b> standard IVF or ICSI in the lab.</li><li><b>Embryo culture:</b> grown for 3–5 days; the best ones are chosen, and extra ones can be frozen.</li><li><b>Embryo transfer:</b> a thin catheter places the embryo in the uterus. It is quick and usually painless. It may be fresh, or frozen in a later cycle.</li><li><b>Support:</b> progesterone for the lining.</li><li><b>Result:</b> blood hCG test about 9–14 days after transfer.</li></ol></div>
+<div class='card'><h2>Chances and risks</h2><ul><li>Success depends mostly on the woman’s age and embryo quality. It is highest under 35 and declines with age; your clinic can give figures for your situation.</li><li>Risks: ovarian hyperstimulation syndrome (OHSS), multiple pregnancy, ectopic pregnancy, bleeding or infection after retrieval.</li><li>Report severe bloating, fast weight gain, breathlessness or sharp pain right away.</li><li>The process can be emotionally tiring; support from your partner and counselling help.</li></ul></div>
+<div class='card'><h2>IUI vs IVF</h2><table><tr><th></th><th>IUI</th><th>IVF</th></tr><tr><td>Fertilisation</td><td>Inside the body</td><td>In the lab</td></tr><tr><td>Tubes needed open</td><td>Yes (at least one)</td><td>No</td></tr><tr><td>Procedure</td><td>Minutes, no sedation</td><td>Egg retrieval under sedation</td></tr><tr><td>Medicines</td><td>Mild</td><td>Intensive injections</td></tr><tr><td>Cost</td><td>Lower</td><td>Higher</td></tr></table></div>
+</section>
+<section class='sec' id='t8'>
+<div class='card'><h2>Tests and how they really feel</h2><p>Pain is personal. These are common real-life experiences, not guarantees. Ask your doctor about pain relief before any test.</p><div><button class='mb' onclick='rt(-1)'>All</button><button class='mb' onclick='rt(0)'>😊 Little</button><button class='mb' onclick='rt(1)'>🙂 Mild</button><button class='mb' onclick='rt(2)'>😣 Moderate</button><button class='mb' onclick='rt(3)'>😖 Stronger</button></div></div>
+<div id='tl'></div>
+<div class='card'><h2>Myths vs facts</h2><p style='color:var(--mu);margin:0'>Tap a myth to see what is true.</p><div id='my'></div></div>
+</section>
+<p class="w">⚠️ Educational information only, not medical advice. Always follow your own doctor’s guidance.<br>© Dr. Rushikesh Joshi &amp; Dr. Vidya Joshi</p></main>
+<script>
+var T=["Follicular Study","Pregnancy Journey","Q&A","Animations","HSG Test","Healthy Tips","IUI","IVF","Tests & Myths"],n=document.getElementById("nav");
+T.forEach(function(t,i){var b=document.createElement("button");b.textContent=t;b.onclick=function(){show(i)};n.appendChild(b)});
+function show(i){T.forEach(function(_,j){document.getElementById("t"+j).classList.toggle("on",i==j);n.children[j].classList.toggle("on",i==j)})}
+show(0);
+function calc(){var s=+document.getElementById("sz").value,g=+document.getElementById("gr").value,o=document.getElementById("out");
+if(!s||s<1){o.textContent="Enter a valid size.";return}
+if(s>=18){o.textContent="Already at or above ~18 mm, the typical mature range. Your doctor decides timing/trigger.";return}
+var d=Math.ceil((18-s)/g),e=Math.ceil((24-s)/g);o.textContent="At "+g+" mm/day, about "+d+" day(s) to reach 18 mm (up to ~"+e+" days for 24 mm). Your doctor will confirm with the next scan."}
+var Q=[["How many follicular scans will I need?","Usually 3–6 scans in a cycle, depending on how fast your follicle grows and whether you take ovulation medicines."],
+["Is a follicular scan painful?","Usually not. A transvaginal probe may feel uncomfortable but takes only a few minutes. Tell the sonographer if you feel pain."],
+["Do I need a full bladder?","Transvaginal scans generally work best with an empty bladder. Follow your clinic’s instructions."],
+["What size follicle ruptures?","Typically 18–24 mm, though it varies by person and medication."],
+["What if the follicle doesn’t rupture?","Sometimes it persists or becomes a cyst (LUF syndrome). Your doctor may adjust treatment or repeat the cycle."],
+["When should I have intercourse?","Every 1–2 days from a few days before expected ovulation through the day after, or as your doctor advises based on the scan."],
+["When can I take a pregnancy test?","About 14 days after ovulation or on the day of a missed period. After a trigger shot, hCG can cause a false positive for ~7–10 days."],
+["What is hCG?","The hormone made after implantation. Its level roughly doubles every 48–72 hours in early healthy pregnancy."],
+["Which vitamins should I take?","Folic acid (commonly 400 mcg daily before and early in pregnancy; higher doses may be prescribed) plus a prenatal vitamin. Ask your doctor first."],
+["Is it safe to exercise?","Mostly yes – walking, swimming, prenatal yoga – unless your doctor advises otherwise. Avoid contact sports and overheating."],
+["What foods should I avoid?","Raw/undercooked meat, fish and eggs, unpasteurised dairy, high-mercury fish, excess caffeine (keep under ~200 mg/day), and alcohol."],
+["How is my due date calculated?","LMP + 280 days (40 weeks), often adjusted by an early ultrasound."],
+["When will I feel the baby move?","Around 16–22 weeks, usually earlier in second pregnancies."],
+["Is spotting normal?","Light spotting can occur early, but always report bleeding to your doctor, especially with pain."],
+["How many ultrasounds are normal?","Commonly a dating scan, NT scan, anomaly scan and growth scans if needed; high-risk pregnancies need more."],
+["When should I go to the hospital?","Regular contractions about 5 minutes apart, water breaking, bleeding, or reduced movements – or earlier per your doctor’s advice."]];
+Q.push([`How much weight should I gain?`,`About 11 to 16 kg for a normal starting weight. Your doctor will set a target for you.`],[`How common is miscarriage?`,`About 1 in 5 recognised pregnancies, mostly from chromosome problems in the embryo and not caused by anything you did.`]);var f=document.getElementById("faq");Q.forEach(function(q){var d=document.createElement("details"),s=document.createElement("summary"),p=document.createElement("p");s.textContent=q[0];p.textContent=q[1];d.appendChild(s);d.appendChild(p);f.appendChild(d)});
+var cv=document.getElementById('cv'),x=cv.getContext('2d'),M=0,el=0,S=[],last=performance.now(),paused=false;
+function initS(){S=[];for(var i=0;i<32;i++)S.push({x:10+Math.random()*90,y:30+Math.random()*300,a:0,v:.6+Math.random()*.7,ph:Math.random()*6})}initS();
+function setM(i){M=i;el=0;initS();for(var j=0;j<5;j++)document.getElementById('m'+j).className='mb'+(j==i?' sel':'')}
+function C(a,b,r,f,s){x.beginPath();x.arc(a,b,Math.max(r,0),0,6.283);if(f){x.fillStyle=f;x.fill()}if(s){x.strokeStyle=s;x.lineWidth=2;x.stroke()}}
+function E(a,b,rx,ry,f){x.beginPath();x.ellipse(a,b,rx,ry,0,0,6.283);x.fillStyle=f;x.fill()}
+function tx(a,b){x.textAlign='left';x.fillStyle='#fff';x.font='600 17px system-ui,sans-serif';x.fillText(a,16,28);x.font='14px system-ui,sans-serif';x.fillStyle='#e7cfe0';x.fillText(b,16,350)}
+function fo(){var p=Math.min(el/9,1),day=Math.round(2+p*12),sz=4+p*18;E(240,190,215,145,'#8a5470');E(240,190,195,125,'#9d6482');
+[[120,150,12],[150,260,10],[340,275,13],[370,120,9],[200,95,8],[250,300,9],[100,225,8]].forEach(function(f){C(f[0],f[1],f[2]*(1-p*.4),'#d9ecff','#fff')});
+var r=sz*2.1,ex=270,ey=185;
+if(el<9){C(ex,ey,r,'#cfe6ff','#fff');C(ex,ey+r*.45,6,'#ffd9a8','#f0a860');C(ex,ey+r*.45,2.5,'#f0a860')}
+else{var q=Math.min((el-9)/2.5,1);C(ex,ey,r*(1-q*.65),q>.6?'#f2c94c':'#cfe6ff','#fff');var px=ex+q*170,py=ey-q*130;C(px,py,14,'rgba(255,255,255,.25)');C(px,py,7,'#ffd9a8','#f0a860')}
+var h=3+p*8;x.fillStyle='#ff9ec4';x.fillRect(570,320-h*16,40,h*16);x.fillStyle='#e7cfe0';x.font='12px system-ui,sans-serif';x.textAlign='center';x.fillText('Lining '+h.toFixed(0)+' mm',590,338);
+tx(el<9?'Day '+day+'  •  Follicle '+sz.toFixed(0)+' mm':'Ovulation – egg released',el<4?'Small follicles recruited by FSH':el<9?'Dominant follicle grows ~2 mm/day':'Ruptured follicle becomes corpus luteum')}
+function sp(dt){var ex=480,ey=185,fade=el>8?Math.max(0,1-(el-8)/1.5):1;
+if(el<9){C(ex,ey,42,0,'rgba(255,220,160,.5)');C(ex,ey,34,'#ffd9a8');C(ex,ey,12,'#ffb870');if(el>8)C(ex,ey,34+(el-8)*25,0,'rgba(255,255,160,'+(1-(el-8))+')')}
+else if(el<10.5){C(ex,ey,36,'#ffd9a8','#ffe9a0');C(ex-5,ey,8,'#ffb870');C(ex+5,ey,8,'#ff9a60')}
+else if(el<11.8){C(ex-22,ey,24,'#ffd9a8','#fff');C(ex+22,ey,24,'#ffd9a8','#fff');C(ex-22,ey,8,'#ffb870');C(ex+22,ey,8,'#ffb870')}
+else{[[-20,-20],[20,-20],[-20,20],[20,20]].forEach(function(o){C(ex+o[0],ey+o[1],19,'#ffd9a8','#fff');C(ex+o[0],ey+o[1],6,'#ffb870')})}
+S.forEach(function(s,i){var w=i==0,d=Math.hypot(ex-s.x,ey-s.y);s.a=Math.atan2(ey-s.y,ex-s.x)+Math.sin(el*3+s.ph)*(d>60?.9:.4);
+var stop=w?(el>6.5?d<22:d<52):d<52;if(!stop){var v=(w?120:50+s.v*30)*dt;s.x+=Math.cos(s.a)*v;s.y+=Math.sin(s.a)*v}else{s.x+=Math.cos(el*8+s.ph)*.3*dt*60;s.y+=Math.sin(el*8+s.ph)*.3*dt*60}
+if(w&&el>=9)return;x.globalAlpha=w?1:fade;x.strokeStyle='#f3eaff';x.lineWidth=1.5;x.beginPath();x.moveTo(s.x,s.y);for(var k=1;k<8;k++){var o=Math.sin(el*14+s.ph-k)*2.5;x.lineTo(s.x-Math.cos(s.a)*k*4-Math.sin(s.a)*o,s.y-Math.sin(s.a)*k*4+Math.cos(s.a)*o)}x.stroke();C(s.x,s.y,w?5:3.5,w?'#ffd54a':'#fff');x.globalAlpha=1});
+tx(el<2?'Millions of sperm are released':el<6?'Swimming toward the egg':el<9?'One sperm penetrates the egg':el<10.5?'Fertilisation – zygote formed':el<11.8?'Cell division begins (2 cells)':'4 cells – travelling to the uterus',el<9?'Only one sperm fertilises the egg':'Embryo implants in the uterus ~6–10 days after ovulation')}
+function hs(){var p=Math.min(el/11,1),u=Math.min(Math.max((p-.35)/.35,0),1);function cav(){x.beginPath();x.moveTo(320,292);x.lineTo(240,125);x.lineTo(400,125);x.closePath()}
+x.beginPath();x.moveTo(320,310);x.lineTo(205,110);x.lineTo(435,110);x.closePath();x.fillStyle='#8a5470';x.fill();C(95,150,34,'#9d6482');C(545,150,34,'#9d6482');
+[[240,125,150,40,100,130],[400,125,490,40,540,130]].forEach(function(t){x.lineCap='round';x.setLineDash([]);x.strokeStyle='#8a5470';x.lineWidth=14;x.beginPath();x.moveTo(t[0],t[1]);x.quadraticCurveTo(t[2],t[3],t[4],t[5]);x.stroke();if(u>0){x.setLineDash([210*u,400]);x.strokeStyle='#6ec6ff';x.lineWidth=6;x.stroke();x.setLineDash([])}});
+x.save();cav();x.fillStyle='#4a2a3d';x.fill();x.clip();x.fillStyle='#6ec6ff';var h=170*Math.min(p/.35,1);x.fillRect(200,292-h,240,h+10);x.restore();
+x.strokeStyle='#ccc';x.lineWidth=5;x.beginPath();x.moveTo(320,345);x.lineTo(320,294);x.stroke();
+if(p>.72){var s=(p-.72)/.28;[[100,130],[540,130]].forEach(function(q){C(q[0],q[1]+12,10+s*28,'rgba(110,198,255,.35)');C(q[0],q[1]+12,4+s*10,'#6ec6ff')})}
+tx(p<.35?'Dye is injected through the cervix':p<.72?'Dye fills the uterus and fallopian tubes':'Spill at both tube ends = tubes are open','Done after periods, before ovulation (about day 7–12)')}
+function im(){var day=Math.min(1+Math.floor(el*.75),11);E(400,190,175,105,'#8a5470');E(400,190,150,80,'#4a2a3d');x.beginPath();x.ellipse(400,190,150,80,0,0,Math.PI);x.strokeStyle='#ff9ec4';x.lineWidth=14;x.stroke();
+x.lineCap='round';x.strokeStyle='#8a5470';x.lineWidth=18;x.beginPath();x.moveTo(30,110);x.lineTo(260,150);x.stroke();
+var px,py;if(el<4){var u=.05+el/4*.9;px=30+u*230;py=110+u*40}else if(el<7){var v=(el-4)/3;px=260+v*140;py=150+v*112}else{px=400;py=262+Math.min((el-7)/3,1)*14}
+if(el>=10)C(px,py,30+Math.sin(el*6)*3,'rgba(255,213,74,.25)');
+if(el<2)C(px,py,10,'#ffd9a8','#fff');else if(el<4){for(var k=0;k<6;k++)C(px+Math.cos(k*1.05)*6,py+Math.sin(k*1.05)*6,5,'#ffd9a8','#fff')}else{C(px,py,15,'#ffe3c4','#fff');C(px-5,py-3,6,'#ff9a60')}
+tx(el<4?'Day '+day+': travelling down the fallopian tube':el<7?'Day '+day+': floating in the uterus as a blastocyst':el<10?'Day '+day+': implanting in the lining':'Implanted: hCG starts rising','Implantation happens about 6–10 days after ovulation')}
+function fg(){var i=Math.min(Math.floor(el/1.9),6),D=[[4,'0.1 cm','under 1 g'],[8,'1.6 cm','1 g'],[12,'5.4 cm','14 g'],[20,'25 cm','300 g'],[28,'37 cm','1 kg'],[36,'47 cm','2.6 kg'],[40,'51 cm','3.4 kg']],d=D[i],sc=(.12+.88*Math.pow(Math.min(el/12.5,1),.8))*(1+.025*Math.sin(el*14));
+C(320,185,125,'#3b2a52','#b89be0');x.save();x.translate(320,195);x.scale(sc,sc);C(-35,-45,38,'#ffd9a8');E(15,15,58,42,'#ffcb94');E(-45,45,18,10,'#ffcb94');E(55,60,22,10,'#ffcb94');E(-10,-10,10,26,'#ffcb94');x.restore();
+tx('Week '+d[0]+'  •  about '+d[1]+'  •  '+d[2],d[0]<=13?'Trimester 1: organs form':d[0]<=27?'Trimester 2: movements felt, anatomy scan':'Trimester 3: rapid weight gain')}
+var TH={Rose:['#fff7f9','#ffffff','#2b2230','#6d6275','#c2467a','#f0d9e3'],Ocean:['#f0f8ff','#ffffff','#12283a','#58708a','#1f7fc4','#d3e6f5'],Mint:['#f0faf5','#ffffff','#12291f','#567166','#1f9d6a','#d3ebe0'],Violet:['#f6f3ff','#ffffff','#241a38','#6b6285','#7b4fd6','#e1d8f5'],Sunset:['#fff6ee','#ffffff','#33200f','#7a6552','#e0701f','#f3dfcc'],Dark:['#15121a','#211c28','#f3ecf6','#b5a8bd','#f08ab8','#38303f'],Night:['#0e1722','#172433','#e8f1fa','#9bb0c4','#5bb4f5','#263648']},DK={Dark:1,Night:1};
+function ap(n){var d=document.documentElement,k=['--bg','--card','--tx','--mu','--ac','--ln'];if(!TH[n]){k.forEach(function(p){d.style.removeProperty(p)});d.style.colorScheme=''}else{TH[n].forEach(function(v,i){d.style.setProperty(k[i],v)});d.style.colorScheme=DK[n]?'dark':'light'}try{localStorage.setItem('th',n)}catch(e){}}
+(function(){var w=document.getElementById('sw');['Auto'].concat(Object.keys(TH)).forEach(function(n){var s=document.createElement('span');s.className='sw';s.title=n;s.style.background=n=='Auto'?'linear-gradient(135deg,#fff 50%,#222 50%)':TH[n][DK[n]?0:4];if(DK[n])s.style.borderColor=TH[n][4];s.onclick=function(){ap(n)};w.appendChild(s)});try{ap(localStorage.getItem('th')||'Auto')}catch(e){}})();
+var LV=['😊','🙂','😣','😖'],LN=['Little or none','Mild','Moderate','Stronger (usually with sedation or pain relief)'],PT=[
+['Pregnancy test (urine or blood)',0,'Nothing beyond a urine sample or a quick needle prick.','A blood hCG test detects pregnancy earlier than home kits.'],
+['Semen analysis',0,'No pain, but many men feel embarrassed or anxious giving a sample.','Follow the lab’s rules on days of abstinence; a repeat test is often needed.'],
+['Dating, NT and anomaly scans',0,'Painless: cold gel and a little pressure on the belly. Anxiety about results is the harder part.','Bring someone with you for support.'],
+['Embryo transfer (IVF)',0,'Usually painless; a full bladder can feel uncomfortable.','Follow your clinic’s bladder instructions.'],
+['Hormone blood tests (AMH, FSH, TSH)',1,'A quick needle prick and sometimes a small bruise.','Some tests must be done on a set cycle day, such as day 2–3.'],
+['Follicular scan (transvaginal ultrasound)',1,'Pressure or mild discomfort from the probe. Repeated scans can feel tiring and intrusive.','Breathe slowly and relax your pelvic muscles; tell the sonographer if it hurts.'],
+['Glucose tolerance test',1,'The sweet drink can cause nausea, plus needle pricks and a long wait.','Follow the fasting advice and carry a snack for afterwards.'],
+['IUI',1,'A mild cramp like a smear test; light spotting is possible.','Rest a few minutes, then carry on with a normal day.'],
+['IVF injections',1,'Small needle stings, bruising, bloating and mood swings for about 8–12 days.','Rotate injection sites and ask the nurse to show you the technique.'],
+['HSG dye test',2,'Period-like cramps for a few minutes, sometimes sharper when the dye goes in. Some people feel faint or tearful. Most recover within the hour.','Take the painkiller your doctor advises and arrange a ride home.'],
+['HyCoSy / saline sonography',2,'Cramping and pressure, usually milder than HSG.','Do it before ovulation and ask about pain relief.'],
+['Hysteroscopy',2,'Cramps while the thin camera is in the uterus. It can be done awake or under sedation.','Ask beforehand which option is offered.'],
+['Endometrial biopsy',2,'A sharp pinch and cramping for seconds to a few minutes.','Take a painkiller before if advised.'],
+['Egg retrieval (IVF)',2,'Done under sedation so you feel little. Afterwards: cramps, bloating and tiredness for a day or two.','Plan rest and have someone take you home.'],
+['Amniocentesis',2,'A pinch and cramping during the needle, then mild cramps.','Rest for the day; report bleeding, fluid leak or fever.'],
+['Laparoscopy',3,'Done under general anaesthesia. Afterwards: sore belly, shoulder-tip pain and tiredness for several days.','Walk gently; report fever or worsening pain.']];
+function rt(f){var h='';PT.forEach(function(t){if(f<0||t[1]==f)h+=`<div class='card'><h2>${LV[t[1]]} ${t[0]}</h2><p style='margin:0'><b>${LN[t[1]]}:</b> ${t[2]}</p><p style='margin:4px 0 0;color:var(--mu)'>Tip: ${t[3]}</p></div>`});document.getElementById('tl').innerHTML=h}rt(-1);
+var MY=[['You always ovulate on day 14.','Ovulation day varies with cycle length and from month to month. A follicular study or ovulation kits show your real timing.'],['Infertility is only a woman’s problem.','Male factors contribute in about one-third of couples, and both partners should be tested.'],['HSG is extremely dangerous and very painful.','Most people feel cramps for a few minutes. Serious problems such as infection are uncommon.'],['IVF babies are not healthy or not natural.','Most IVF babies are healthy. Risks like multiple or early birth are mainly linked to transferring more than one embryo.'],['You must lie in bed for days after IUI or embryo transfer.','Long bed rest does not improve success. Normal light activity is fine unless your doctor says otherwise.'],['Just relax and you will conceive.','Stress affects wellbeing, but relaxing alone does not fix blocked tubes, ovulation problems or low sperm counts.'],['Eating for two means doubling your food.','You need only a small extra amount in trimesters 2–3. Quality matters more than quantity.'],['Sex and exercise harm a normal pregnancy.','In an uncomplicated pregnancy both are usually safe. Your doctor will tell you if you need to stop.'],['Belly shape or cravings predict the baby’s sex.','Only scans or genetic tests can tell. Bump shape depends on your body and muscles.'],['Lifting something or a fall in daily life caused my miscarriage.','Most early miscarriages happen because of chromosome problems in the embryo, not anything you did.'],['You cannot get pregnant while breastfeeding.','You can. Breastfeeding is not reliable contraception.'],['Birth control pills cause permanent infertility.','Fertility usually returns within a few months of stopping.'],['After 35 you cannot get pregnant.','Fertility declines gradually with age, but many conceive. See a doctor sooner if you are not conceiving.']];
+MY.forEach(function(m){var d=document.createElement('details'),s=document.createElement('summary'),p=document.createElement('p');s.textContent='❌ '+m[0];p.textContent='✅ '+m[1];d.appendChild(s);d.appendChild(p);document.getElementById('my').appendChild(d)});
+function L(n){var dt=Math.min((n-last)/1000,.1);last=n;if(document.getElementById('t3').classList.contains('on')){if(!paused)el+=dt;if(el>13.5){el=0;initS()}x.fillStyle='#2a1b33';x.fillRect(0,0,640,360);[fo,sp,hs,im,fg][M](paused?0:dt)}requestAnimationFrame(L)}requestAnimationFrame(L);
+</script></body></html>
